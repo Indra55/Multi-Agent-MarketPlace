@@ -1,0 +1,47 @@
+{
+  "agents": [
+    {
+      "id": "agent1",
+      "type": "meeting_summarizer",
+      "domain": "corporate",
+      "params": {}
+    },
+    {
+      "id": "agent2",
+      "type": "seo_optimizer",
+      "domain": "marketing",
+      "params": {}
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task1",
+      "type": "meeting_summarization",
+      "domain": "corporate",
+      "agent_id": "agent1",
+      "params": {
+        "pdf_path": "C:\\\\Users\\\\galah\\\\MyCodes\\\\Projectz\\\\Hackathons\\\\D2K\\\\Agents\\\\uploads\\\\"
+      }
+    },
+    {
+      "id": "task2",
+      "type": "seo_optimization",
+      "domain": "marketing",
+      "agent_id": "agent2",
+      "params": {
+        "website_url": "https://solunation.com",
+        "keywords": [
+          "Marketing",
+          "Solutions",
+          "Services"
+        ]
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "task1",
+      "to": "task2"
+    }
+  ]
+}
